@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "ZoneTalk",
+    "slug": "zonetalk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#0B1220"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zonetalk.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "ZoneTalk uses your location to show nearby people in your Zone and on the map.",
+        "NSMicrophoneUsageDescription": "ZoneTalk needs microphone access to record voice notes.",
+        "NSPhotoLibraryUsageDescription": "ZoneTalk needs photo library access so you can send images and set a profile photo."
+      }
+    },
+    "android": {
+      "package": "com.zonetalk.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_ANDROID_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "ZoneTalk uses your location to show nearby people in your Zone and on the map."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}

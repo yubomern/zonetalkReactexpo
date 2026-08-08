@@ -10,7 +10,7 @@ import { AppProvider, useApp } from "./src/AppContext.js";
 import AuthScreen from "./src/screens/AuthScreen.js";
 import HomeScreen from "./src/screens/HomeScreen.js";
 import ChatScreen from "./src/screens/ChatScreen.js";
-import MapScreen from "./src/screens/MapScreen.js";
+import MapScreen from "./src/screens/MapScreen";
 
 const Stack = createNativeStackNavigator();
 

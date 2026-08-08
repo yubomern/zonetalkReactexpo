@@ -9,11 +9,21 @@ components instead of the DOM.
 
 ```bash
 npm install
-npx expo start
+npx expo run:android
+# or
+npx expo run:ios
+# then on later runs
+npm start
 ```
 
-Then press `i` for iOS simulator, `a` for Android emulator, or scan the QR
-code with Expo Go on a physical device.
+This project now defaults to a development build workflow instead of Expo Go.
+Use `npm start` to connect Metro to the installed development client.
+
+If you want the old Expo Go flow for quick smoke tests, run:
+
+```bash
+npm run start:go
+```
 
 ## What changed vs. the web version
 
